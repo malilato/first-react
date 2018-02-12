@@ -2,6 +2,33 @@
   width: 912px;
   margin: 0 auto;
   padding: 20px;
-  border: 2px solid #00D8FF;
-  background: #DDEEFF;
+  background: white;
+}
+.tablecustom {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  border-spacing: 0 1px;
+}
+th {
+  color: #757575;
+  background-color: white;
+  height: 47px;
+  text-align: left;
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  width: 25%;
+}
+td {
+  background-color: white;
+  text-align: left;
+  padding-left: 24px;
+  height: 70px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #505050;
+  font-weight: 400;
+  width: 25%;
 }

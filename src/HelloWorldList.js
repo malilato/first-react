@@ -10,16 +10,21 @@ class HelloWorldList extends Component {
   this.addGreeting = this.addGreeting.bind(this);
   this.removeGreeting = this.removeGreeting.bind(this);
   }
+  onSort(event, sortKey){
+    const data = this.state.greetings;
+    data.sort((a,b) => a[sortKey].localeCompare(b[sortKey]))
+    this.setState({data})
+  }
   render() {
+    var newdata = this.state.greetings;
   return (
     <div>
     <AddGreeter addGreeting={this.addGreeting}/>
-      <table>
+      <table className="tablecustom">
         <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>E-mail address</th>
-          <th>Phone number</th>
+          <th onClick={e => this.onSort(e, 'name')}>Name</th>
+          <th onClick={e => this.onSort(e, 'email')}>E-mail address</th>
+          <th onClick={e => this.onSort(e, 'phonenumber')}>Phone number</th>
           <th></th>
         </tr>
         <tbody className="HelloWorldList">

@@ -91,7 +91,7 @@ class AddGreeter extends Component {
         onBlur={this.handleBlur('greetingPhonenumber')}
       />
       &nbsp;&nbsp;
-      <button disabled={isDisabled} onClick={this.handleSubmit}>Add</button>
+      <button disabled={isDisabled} onClick={this.handleSubmit}>Add new</button>
     </div>
   );
   }

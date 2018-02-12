@@ -1,9 +1,31 @@
 .AddGreeter {
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid #00FFD8;
-  background: #DDFFEE;
+  height: 76px;
+  background: white;
   text-align: center;
+  width: 912px;
+  display: table;
+}
+input {
+  height: 38px;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 25%;
+  float: left;
+  border-width: 1px solid;
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+button {
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: lightgrey;
+  border: 0;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
 }
 
-.error { border: 3px solid red !important;}
+.error { border: 1px solid red !important;}

@@ -15,7 +15,10 @@ header {
   font-size: 25px;
   font-weight: bold;
   color: white;
-  padding-left: 32px;
+}
+.headerClass {
+  width: 912px;
+  margin: 0 auto;
 }
 #root {
   padding-top: 100px;
